@@ -1,0 +1,37 @@
+.clients {
+	color: #fff;
+	/* Only Desktop */
+	@media screen and (min-width: 992px) {
+		background: $color-logo-secondary;
+		background: -moz-linear-gradient(left,  $color-logo-secondary 50%, $color-logo-primary 50%, $color-logo-primary 50%);
+		background: -webkit-linear-gradient(left,  $color-logo-secondary 50%, $color-logo-primary 50%, $color-logo-primary 50%);
+		background: linear-gradient(to right,  $color-logo-secondary 50%, $color-logo-primary 50%, $color-logo-primary 50%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color-logo-secondary', endColorstr='$color-logo-primary',GradientType=1 );
+		
+		&__content {
+			margin-top: 95px;
+		}
+	}
+	
+	&__case-studys {
+		/* Only Desktop */
+		@media screen and (min-width: 992px) {
+			padding-right: 8.33333333%;
+		}
+		/* Only Mobile */
+		@media screen and (max-width: 991px) {
+			background-color: $color-logo-secondary;
+		}
+	}
+
+	&__reference {
+		/* Only Desktop */
+		@media screen and (min-width: 992px) {
+			padding-left: 8.33333333%;
+		}
+		/* Only Mobile */
+		@media screen and (max-width: 991px) {
+			background-color: $color-logo-primary;
+		}
+	}
+}

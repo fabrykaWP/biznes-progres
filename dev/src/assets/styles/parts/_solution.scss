@@ -1,0 +1,55 @@
+.solution {
+	border: 1px solid transparent;
+	&:hover {
+		border: 1px solid $color-logo-secondary;
+	}
+	&__bg {	
+		background-size: cover;
+		background-repeat: no-repeat;
+		height: 260.5px;
+		margin-top: 15px;
+		margin-bottom: 15px;
+		position: relative;
+		z-index: 1;
+		
+		&:before {
+			content: '';
+			height: 100%;
+			position: absolute;
+			width: 100%;
+			@include background-opacity( $color-logo-primary , 0.55);
+			transition: opacity 500ms;
+			-webkit-transition: opacity 500ms;
+  			z-index: 3
+		}
+
+		&:hover:before {
+			opacity: 0;
+		}
+		&:hover > .solution__title--hover {
+			opacity: 1;
+		}
+	}
+
+	&__title {
+		@extend .font-roboto-medium;
+		bottom: 0;
+		color: #fff;
+		font-size: 17px;
+		letter-spacing: 1px;
+		padding: 30px 25px;
+		position: absolute;
+		transition: opacity 500ms;
+		-webkit-transition: opacity 500ms;
+		width: 100%;
+		z-index: 4;
+
+		&--hover {
+			background-color: $color-logo-secondary;
+			width: calc(100% + 30px);
+			margin-left: -15px;
+			opacity: 0;
+			padding: 30px 40px;
+		}
+	}
+}

@@ -1,0 +1,27 @@
+html,
+body {
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	@extend .font-roboto;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+/* Vertical align bootsrap col with flex for desktop */
+@media screen and (min-width: 992px) {
+	.vertical-align {
+	  display: flex;
+	  flex-direction: row;
+	}
+
+	.vertical-align > [class^="col-"],
+	.vertical-align > [class*=" col-"] {
+	  display: flex;
+	  align-items: center;
+	}
+}

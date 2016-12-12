@@ -1,0 +1,19 @@
+@import 'variables/colors';
+
+@import 'mixins/bg';
+
+@import 'base/font';
+@import 'base/layout';
+@import 'base/typography';
+
+@import 'components/section';
+@import 'components/slick';
+
+@import 'sections/clients';
+@import 'sections/slider';
+
+@import 'parts/fastContact';
+@import 'parts/solution';
+@import 'parts/caseStudy';
+
+@import 'partials/footer';

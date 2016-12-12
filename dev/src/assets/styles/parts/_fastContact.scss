@@ -1,0 +1,22 @@
+.fast-contact {
+	margin-top: 20px;
+
+	&__item {		
+		/* Only Desktop */
+		@media screen and (min-width: 992px) {
+			display: inline-block;
+			&:first-child {
+				margin-right: 8.33333333%;
+			}
+		}
+		/* Only Mobile */
+		@media screen and (max-width: 991px) {
+			text-align: center;
+		}
+
+		i {
+			font-size: 40px;
+			vertical-align: middle;
+		}
+	}
+}

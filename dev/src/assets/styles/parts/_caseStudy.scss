@@ -1,0 +1,28 @@
+.case-study {
+	&__title {
+		@extend .font-roboto-bold;
+		font-size: 25px;
+		/* Only Mobile */
+		@media screen and (max-width: 991px) {
+			text-align: center;
+		}
+	}
+	&__excerpt {
+		/* Only Desktop */
+		@media screen and (min-width: 992px) {
+			margin-top: 70px;
+		}
+		/* Only Mobile */
+		@media screen and (max-width: 991px) {
+			text-align: center;
+		}
+	}
+	&__logo {
+		/* Only Mobile */
+		@media screen and (max-width: 991px) {
+			img {
+				margin: 0 auto;
+			}
+		}
+	}
+}
